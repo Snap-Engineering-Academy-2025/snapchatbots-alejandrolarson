@@ -3,7 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, SafeAreaView, Platform, Text } from "react-native";
 import BasicChatbot from "../components/BasicChatbot";
 import BakersChatbot from "../components/BakersChatbot";
-
+import AlejandrosChatbot from "../components/AlejandrosChatbot";
 // prettier-ignore
 export const CHATBOTS = {
   "BasicChatbot": {
@@ -17,8 +17,14 @@ export const CHATBOTS = {
     name: "Baker's Dog Trivia",
     imageUrl: "https://img.freepik.com/free-vector/cute-dog-robot-cartoon-character-animal-technology-isolated_138676-3143.jpg?w=150",
     component: BakersChatbot,
-  }
-};
+  },
+    "AlejandrosChatbot": {
+      id : "AlejandrosChatbot",
+      name : "Alejandro's Chat Bot",
+      imageURL: "./assets/guitar.jpeg",
+      component: AlejandrosChatbot,
+    }
+  };
 
 export default function ChatScreen({ route }) {
   const { chatbotName } = route.params;

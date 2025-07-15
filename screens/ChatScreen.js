@@ -4,6 +4,7 @@ import { StyleSheet, SafeAreaView, Platform, Text } from "react-native";
 import BasicChatbot from "../components/BasicChatbot";
 import BakersChatbot from "../components/BakersChatbot";
 import AlejandrosChatbot from "../components/AlejandrosChatbot";
+import NicolesChatbot from "../components/NicolesChatbot"
 // prettier-ignore
 export const CHATBOTS = {
   "BasicChatbot": {
@@ -21,8 +22,14 @@ export const CHATBOTS = {
     "AlejandrosChatbot": {
       id : "AlejandrosChatbot",
       name : "Alejandro's Chat Bot",
-      imageURL: "./assets/guitar.jpeg",
+      imageUrl: "https://www.motortrend.com/uploads/sites/21/2008/07/10211580.jpeg.jpg",
       component: AlejandrosChatbot,
+    },
+    "NicolesChatbot": {
+      id : "NicolesChatbot",
+      name : "Nicole's Chat Bot",
+      imageUrl: "https://cdn.outsideonline.com/wp-content/uploads/2021/01/21/surfer-san-diego-dawn_s.jpg",
+      component: NicolesChatbot,
     }
   };
 

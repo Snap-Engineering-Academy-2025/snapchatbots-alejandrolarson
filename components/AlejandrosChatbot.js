@@ -4,7 +4,7 @@ import { GiftedChat } from "react-native-gifted-chat";
 const CHATBOT_USER_OBJ = {
   _id: 2,
   name: "React Native Chatbot",
-  avatar: "https://loremflickr.com/140/140",
+  avatar: "https://www.motortrend.com/uploads/sites/21/2008/07/10211580.jpeg.jpg",
 };
 
 //  three trivia questions

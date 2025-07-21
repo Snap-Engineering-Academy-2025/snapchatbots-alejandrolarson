@@ -1,7 +1,9 @@
+import { CHATGPT_KEY } from '@env';
+
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Accept", "application/json");
-myHeaders.append("Authorization", "");
+myHeaders.append("Authorization", `Bearer ${CHATGPT_KEY}`);
 
 export const getChat = async (messages) => {
   const raw = JSON.stringify({

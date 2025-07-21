@@ -10,7 +10,6 @@ const renderChat = ({ item, index }) => (
     songTitle={item.name}
     songArtists={[{ name: "developer" }]}
     albumName={item.id}
-    duration={1000}
   />
 );
 

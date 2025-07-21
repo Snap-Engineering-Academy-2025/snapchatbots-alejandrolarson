@@ -29,7 +29,7 @@ export default function AlejandrosChatbot() {
     if (messages.length < 1) {
       // Add a "starting message" when chat UI first loads
       addBotMessage(
-        "Hello, welcome to simple trivia! Say 'Yes' when you're ready to play!"
+        "Hello, welcome to Alejandro's classic rock trivia! Say 'Yes' when you're ready to play!"
       );
     }
   }, []);
@@ -78,7 +78,7 @@ export default function AlejandrosChatbot() {
         } 
         
       } else if (isPlaying && questionIndex < questions.length && questions[questionIndex].correct_answer.trim().toLowerCase() !== userMessages[0].text.trim().toLowerCase()) {
-        addBotMessage("Incorrect");
+        addBotMessage("Incorrect. Try again.");
       }
 
   };
